@@ -1,3 +1,9 @@
-with open(r"C:\Users\Hallo\OneDrive\Documents\GitHub\CIS-117-Partner-Lab-3\country_full.csv") as f:
+from pathlib import Path
+
+script_dir = Path(__file__).parent
+file_path = script_dir / "country_full.csv"
+
+
+with open(file_path, "r") as f:
     for line in f:
         print(line.split(",")[0] + ", " + line.split(",")[5])
