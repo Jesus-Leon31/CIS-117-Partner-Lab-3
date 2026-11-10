@@ -1,3 +1,5 @@
+#Read a CSV file and prints the country name and region for each country.
+
 from pathlib import Path
 
 script_dir = Path(__file__).parent
